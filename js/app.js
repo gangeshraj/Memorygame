@@ -53,7 +53,7 @@ $(document).ready(function(){
 function resetdeck()//resets the whole deck initialise variables cards shuffles them
 {
     // shuffle the list of cards using the provided "shuffle" method below
-    //shuffle(array);//open show match nonmatch TO REMMOVE THIS linE
+    shuffle(array);//open show match nonmatch TO REMMOVE THIS linE
     $(".deck").html("");
     for (let i=0;i<array.length;++i)
         {
@@ -63,7 +63,7 @@ function resetdeck()//resets the whole deck initialise variables cards shuffles 
 setTimeout(function(){ $('.card').addClass('open show');},1);
 //closing the cards and calling the function responsible for game
 //because of nesting of time out game will only be called when its nested time out is completed
-setTimeout(function(){$('.card').removeClass('open show'); setTimeout(game,1); }, 1);
+setTimeout(function(){$('.card').removeClass('open show'); setTimeout(game,1); },9000);
 move=0;
 match=0;
 listopen=[];
@@ -198,5 +198,5 @@ function matchingclick(thisvariable,lastvariable)//even click
 
 function stoptimer()//stop timer
 {
-    setTimeout(function(){clearInterval(timer);},50);//stops the timer
+    setTimeout(function(){clearInterval(timer);},100);//stops the timer
 }
