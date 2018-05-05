@@ -19,3 +19,8 @@ else if the cards dont match than both the cards closes back
 when all the cards open there is a box opens which tels us the stars we won
 
 the time took to complete the game and ask whether we want to play again
+
+
+#hosted on
+
+https://gangeshraj.github.io/Memorygame/
