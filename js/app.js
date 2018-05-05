@@ -22,7 +22,7 @@ array[13]='<li class="card"><i class="fa fa-bolt"></i></li>';
 array[14]='<li class="card"><i class="fa fa-bicycle"></i></li>';
 array[15]='<li class="card"><i class="fa fa-bicycle"></i></li>';
 //responsible for calling a modal box
-let a='<div class="container boxopener"><h1><b>RITU RAJ\'s MEMORY GAME</b></h1><button type="button" class="btn btn-info btn-lg" id="myBtn">START THE GAME</button>';
+let a='<div class="container boxopener"><h1><b>GANGESH RAJ\'s MEMORY GAME</b></h1><button type="button" class="btn btn-info btn-lg" id="myBtn">START THE GAME</button>';
 //It creates a modal box and its structure when we click start the game
 let b='<div class="modal fade boxshower" id="Modal" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title"><b>%heading%</b></h4></div><div class="modal-body"><p>%text%</p></div><div class="modal-footer"><button type="button" class="btn btn-default modalbutton" data-dismiss="modal" onClick="resetdeck()">%button%</button></div></div></div></div>';
 //it creates a modal box and its structure when we win the game
