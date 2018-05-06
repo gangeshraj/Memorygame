@@ -63,7 +63,7 @@ function resetdeck()//resets the whole deck initialise variables cards shuffles 
 setTimeout(function(){ $('.card').addClass('open show');},1);
 //closing the cards and calling the function responsible for game
 //because of nesting of time out game will only be called when its nested time out is completed
-setTimeout(function(){$('.card').removeClass('open show'); setTimeout(game,1); },9000);
+setTimeout(function(){$('.card').removeClass('open show'); setTimeout(game,1); },5000);
 move=0;
 match=0;
 listopen=[];
@@ -165,9 +165,9 @@ function matchingclick(thisvariable,lastvariable)//even click
          listopen.pop();//removing the card from open list
          //removed last card open(blue color),added nonmatch(red),added this time clicked show(show content) nonmatch(red color)
          $(lastvariable).removeClass('open'); $(lastvariable).addClass('nonmatch'); $(thisvariable).addClass('show nonmatch');
-         setTimeout(function(){//wait for 250 millisecond and execute
+         setTimeout(function(){//wait for 190 millisecond and execute
          //removed show(show content)and nonmatch(red color)
-         $(lastvariable).removeClass('show nonmatch'); $(thisvariable).removeClass('show nonmatch');},250);
+         $(lastvariable).removeClass('show nonmatch'); $(thisvariable).removeClass('show nonmatch');},190);
          },1);
     }
     move+=1;
