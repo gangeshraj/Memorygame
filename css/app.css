@@ -158,10 +158,20 @@ h1,h2{
     text-align: center;  
 }
 .deck{
-    height:350px;
-    width:350px;
+    height:320px;
+    width:320px;
     min-height:350px;
     padding:10px;
+    margin-top:25px;
+}
+
+.fa-star,
+.fa-repeat{
+    display: inline;
+}
+
+.score-panel{
+    width:280px;
 }
 
 .deck .card{
