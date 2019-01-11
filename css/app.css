@@ -139,3 +139,72 @@ h1,h2 {
 .fa-star{
     background-color: yellow;
   }
+
+.modal.in .modal-dialog{
+    margin-top:10%;
+}
+
+.modalbutton{
+    margin:auto;
+    display:block;
+}
+@media only screen and (max-width:700px)
+{
+
+h1,h2{
+    margin:25px auto;
+    font-size:25px;    
+}
+.deck{
+    height:350px;
+    width:350px;
+    min-height:350px;
+    padding:10px;
+}
+
+.deck .card{
+    height:-webkit-calc(100%/4.7);
+    height:calc(100%/4.7);
+    width:-webkit-calc(100%/4.7);
+    width:calc(100%/4.7);
+}
+
+.fa{
+    padding-top:0;
+    -webkit-transform: translateY(55%);
+    -ms-transform: translateY(55%);
+    transform: translateY(55%);
+}
+
+.modal-body p{
+    margin: 25px 50px 25px;
+    height: 200px;
+    font-size: 0.60em;
+
+}
+.modal-body{
+    overflow: scroll;
+}
+
+.modal.in .modal-dialog{
+    margin-top:40%;
+}
+
+
+}
+
+@media only screen and (max-width:500px)
+{
+    .modal-body p{
+        font-size: 0.50em;
+    
+    }
+}
+
+@media only screen and (max-width:350px)
+{
+    .modal-body p{
+        font-size: 0.40em;
+    
+    }
+}
